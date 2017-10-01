@@ -1,7 +1,7 @@
 {
   "name": "transfer_contract",
   "version": "0.0.1",
-  "description": "How to build Ethereum transaction client side",
+  "description": "Transfers transactions to main account",
   "main": "index.js",
   "jsnext:main": "es6/index.js",
   "scripts": {
