@@ -15,7 +15,7 @@ Clone github repo and run:
 
 Main function `createContract` can be imported.
 
-`import createContract from 'transfer_contract`
+`import createContract from 'transfer_contract'`
 
 __createContract__(web3Config = null, password, senderName, receiverAddress)
 
