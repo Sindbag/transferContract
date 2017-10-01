@@ -1,3 +1,3 @@
-import { createContract } from './newAccountTransactionContract';
+import { createContract } from './lib/newAccountTransactionContract';
 
 export default createContract;
