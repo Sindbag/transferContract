@@ -1,6 +1,6 @@
 {
-  "name": "offlinetx",
-  "version": "0.0.0",
+  "name": "transfer_contract",
+  "version": "0.0.1",
   "description": "How to build Ethereum transaction client side",
   "main": "index.js",
   "jsnext:main": "es6/index.js",
@@ -12,7 +12,7 @@
     "build": "webpack",
     "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Anatoly Bardukov",
   "license": "MIT",
   "dependencies": {
     "elliptic": "^6.3.2",
@@ -61,5 +61,20 @@
     "webpack-merge": "^0.14.0",
     "eslint": "^3.12.2",
     "eslint-plugin-jsx-a11y": "^2.2.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sindbag/transferContract.git"
+  },
+  "keywords": [
+    "transfer",
+    "smart",
+    "contract",
+    "ethereum",
+    "solidity"
+  ],
+  "bugs": {
+    "url": "https://github.com/Sindbag/transferContract/issues"
+  },
+  "homepage": "https://github.com/Sindbag/transferContract#readme"
 }

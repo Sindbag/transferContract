@@ -13,6 +13,8 @@ contract TransferContract {
     address receiver;
     address creator;
     public string user;
+    
+    mapping(address => uint256) transfered;
 
     event TransferComplete(address payer, uint value);
 
@@ -25,6 +27,7 @@ contract TransferContract {
     function () payable {
         receiver.transfer(msg.value);
         TransferComplete(msg.sender, msg.value);
+        transfered[msg.sender] += msg.value;
     }
 }`;
 }
@@ -88,7 +91,7 @@ async function deployContract(web3, abi, code, password) {
     return await waitBlock();
 }
 
-async function createContract(web3Config = null, password, senderName, receiverAddress) {
+export async function createContract(web3Config = null, password, senderName, receiverAddress) {
 
     let contractName = 'transactionalContract';
 
